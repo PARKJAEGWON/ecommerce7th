@@ -1,0 +1,25 @@
+1. 그라운드 룰 설정
+2. 적정 템플릿 탐색
+3. 주요기능 관련 참조 사이트
+ㄴ경매
+-https://dokkebi.com/auction/auction_list.asp?sing=S
+-https://continue-auction.com/?gad_source=1&gclid=Cj0KCQjwo8S3BhDeARIsAFRmkONc_wcvGhSvWxfcnc9Rxos6q6pPV5y_akVCWeWJFOV2MPtJarUPSIoaAuUxEALw_wcB
+4. 회의록/참조문서/의견제시 등 - notion or googlesheet or github
+
+
+경매
+- 상품별 남은 시간 (초단위로 시간 갱신)
+- 참여자 수
+- 기준 가격 제시
+- 경매 시작시 관련 회원들에게 알림(메세지, 이메일, 카카오톡 등) 전송
+ㄴ구매기록, 좋아요(찜)기록 등을 활용
+- 판매자와 구매자들 간의 실시간 채팅 (좌측-구매자, 우측-판매자 / 메시지와 유사한 UI)
+- 경매 시간 종료 후 낙/유찰 정보와 낙찰 가격
+
+오디오
+- tts
+
+
+
+품목
+1. 옷
