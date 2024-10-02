@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.co.challengefarm.front.mybatis.member.Member">
+
+	<select id="selectDuplicate" parameterType="memberDto" resultType="java.lang.Integer">
+		SELECT
+			COUNT(EMAIL)
+		FROM
+			TB_MBR
+		WHERE
+			EMAIL = #{email}
+	</select>
+	
+	<insert id="insert" parameterType="memberDto">
+		INSERT INTO TB_MBR
+			(SEQ_MBR, EMAIL, PASSWD, CD_STATE, MBR_NM, GENDER, PHONE,POST, ADDR1, ADDR2, FLG_SMS, DT_SMS, FLG_EMAIL, DT_EMAIL, DT_REG, REGISTER)
+		VALUES
+			(#{seq_mbr}, #{email}, #{passwd}, 0, #{mbr_nm}, #{gender}, #{phone}, #{post}, #{addr1}, #{addr2}, #{flg_sms}, SYSDATE, #{flg_email}, SYSDATE, SYSDATE, #{register})
+	</insert>
+	
+	<select id="sequence" resultType="java.lang.Integer">
+		SELECT SQ_SEQ_MBR.NEXTVAL FROM DUAL
+	</select>
+	
+</mapper>
